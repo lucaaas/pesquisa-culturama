@@ -64,7 +64,12 @@
           <input id="masc" type="radio" name="userGender" value="masculino" />
           <label for="masc">Masculino</label>
 
-          <input id="notInformed" type="radio" name="userGender" value="notInformed" />
+          <input
+            id="notInformed"
+            type="radio"
+            name="userGender"
+            value="notInformed"
+          />
           <label for="notInformed">Prefiro não informar</label>
 
           <br />
@@ -112,7 +117,7 @@
 
           <label for="city">Cidade:</label>
           <input
-          id="city"
+            id="city"
             type="text"
             name="userCity"
             autocomplete="address-level2"
@@ -124,7 +129,12 @@
           <legend>Hábitos</legend>
 
           <p>Redes sociais:</p>
-          <input id="instagram" type="checkbox" name="social" value="instagram" />
+          <input
+            id="instagram"
+            type="checkbox"
+            name="social"
+            value="instagram"
+          />
           <label for="instagram">Instagram</label>
 
           <input id="facebook" type="checkbox" name="social" value="facebook" />
@@ -132,6 +142,22 @@
 
           <input id="linkedin" type="checkbox" name="social" value="linkedin" />
           <label for="linkedin">LinkedIn</label>
+
+          <br />
+
+          <label for="musicStyle">Estilo musical: </label>
+          <input
+            list="styleTypes"
+            type="text"
+            name="userMusicStyle"
+            id="musicStyle"
+          />
+          <datalist id="styleTypes">
+            <option value="rock"></option>
+            <option value="pop"></option>
+            <option value="funk"></option>
+            <option value="sertanejo"></option>
+          </datalist>
         </fieldset>
 
         <button type="submit">Enviar</button>
